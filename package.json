@@ -1,0 +1,35 @@
+{
+  "name": "armario-virtual-hombres",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run tests/unit",
+    "test:integracion": "vitest run tests/integracion --no-file-parallelism",
+    "medir": "vitest run tests/medicion",
+    "db:migrar": "node --env-file=.env.local scripts/migrar.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.3.0",
+    "@supabase/ssr": "^0.12.7",
+    "@supabase/supabase-js": "^2.118.0",
+    "next": "16.4.3",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/pg": "^8.23.1",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "pg": "^8.23.1",
+    "sharp": "^0.35.5",
+    "typescript": "5.9.3",
+    "vitest": "^5.0.5"
+  }
+}
