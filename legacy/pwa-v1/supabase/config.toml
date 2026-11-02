@@ -1,0 +1,9 @@
+# Fragmento para `supabase functions deploy`. Hotmart no envía JWT: el webhook se protege con el Hottok.
+[functions.hotmart-webhook]
+verify_jwt = false
+
+[functions.escanear-prenda]
+verify_jwt = true
+
+[functions.borrar-cuenta]
+verify_jwt = true
